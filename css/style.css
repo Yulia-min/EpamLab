@@ -1,0 +1,141 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main_light {
+    background-image: url("../img/backg-light.jpg");
+}
+
+.main_light .form {
+    background: linear-gradient(#ffffff, #73b5ff63);
+
+}
+
+.main_light .form__title {
+    color: black;
+}
+
+.main_light .form__field > input {
+    color: black;
+}
+
+.main_light .form__submit > button {
+    color: black;
+    border-color: black;
+}
+
+.main_light .theme-buttom_light {
+    display: none;
+}
+
+.main_light .theme-buttom_dark {
+    border-bottom: 2px solid black;
+}
+
+
+
+.main_dark {
+    background-image: url("../img/cosmos.jpg");
+}
+
+.main_dark .form {
+    background: linear-gradient(#000000cc, #3d3d3dbe);
+}
+
+.main_dark .form__title {
+    color: white;
+}
+
+.main_dark .form__field > input {
+    color: white;
+}
+
+.main_dark .theme-buttom_dark {
+    display: none;
+}
+
+.main_dark .theme-buttom_light {
+    border-bottom: 2px solid white;
+}
+
+
+
+.form {
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form__field {
+    margin-top: 4px;
+}
+
+.form__field > input {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+.form__field > div {
+    color: red;
+    margin-top: 4px;
+    height: 18px;
+}
+
+.form__submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form__submit > button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #fff;
+    background: none;
+    font-weight: bold;
+    transition: .2s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form__field_error.form__field_error {
+    border-color: red;
+}
+
+.theme-buttom {
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
